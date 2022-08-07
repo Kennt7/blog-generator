@@ -1,5 +1,4 @@
-'use strict';
-
+555
 
 const gulp = require('gulp');
 var concat = require('gulp-concat');
