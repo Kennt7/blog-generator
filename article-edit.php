@@ -54,12 +54,13 @@
 
                             <label for="keywords">Keywords:</label>
                             <input type="text" name="keywords"></br>
-                        </br>
+                       
 
-                        <button typw="submit" form="article_form" value="Submit">Submit</button>
+                
                         <div class="col-md-6">
                         <label for="content_input">Content:</label>
                         <textarea rows="5" cols="40" name="content" form="articleform"></textarea>
+                        <button type="submit" form="article_form" value="Submit">Submit</button>
                         </div>
                         </form>
                         </br>
