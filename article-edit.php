@@ -38,7 +38,7 @@
 
                                             </nav>
                                             <div class="col-md-6">
-                                                <form action="xxx.php" method="post" class="articleform">
+                                                <form action="generate_article.php" method="post" class="articleform">
                                                     <h2>Article-edit
                                                     </h2>
                                                     <label for="title_input">Title:</label>
@@ -59,7 +59,7 @@
                         <button typw="submit" form="article_form" value="Submit">Submit</button>
                         <div class="col-md-6">
                         <label for="content_input">Content:</label>
-                        <textarea rows="6" cols="6" name="content" form="articleform"></textarea>
+                        <textarea rows="5" cols="40" name="content" form="articleform"></textarea>
                         </div>
                         </form>
                         </br>
