@@ -48,7 +48,7 @@
                                             <input type="text" name="lead_input"></br>
                                     </br>
                                     <label for="image_input">Image:</label>
-                                    <input type="text" name="image_input"></br>
+                                    <input type="file" name="image_input"></br>
                             </br>
                        
 
@@ -58,9 +58,9 @@
 
                 
                         <div class="col-md-6">
-                        <label for="content_input">Content:</label>
+                        <label for="content_input">Content:</label></br>
                         <textarea rows="5" cols="40" name="content" form="articleform"></textarea>
-                        <button type="submit" form="article_form" value="Submit">Submit</button>
+                        <button type="submit" form="article_form" onclick="submitData()" value="Submit">Submit</button>
                         </div>
                         </form>
                         </br>

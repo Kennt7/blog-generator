@@ -33,6 +33,16 @@
     </ul>
   </div>
 
+</main>
 </nav>
+<main>
+<article>
+
+<button class="btnCreate">Create article</button>
+<button class="btnUpdate">Update article</button>
+<button class="btnDelete">Delete Article</button>
+</article>
+
+</main>
 </body>
 </html>

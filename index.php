@@ -36,13 +36,19 @@
                                     </div>
 
                                 </nav>
-                                <div class="container mt-3">
-                                   <button class="btn btn-info">Read blogs</button>
 
-                                    <div class="card" ></div>
-                                    <br>
+                                <main>
+                                    <div class="container mt-3">
+                                        <button class="btn btn-info">Read blogs</button>
 
-                                        <div class="card" ></div>
+                                        <article>
+                                            <div class="card"></div>
+                                            <br>
+
+                                                <div class="card"></div>
+                                            </div>
+                                        </article>
                                     </div>
-                                </body>
-                            </html>
+                                </main>
+                            </body>
+                        </html>
