@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js\create-article.js"></script>
   
     <title>Document</title>
 </head>
@@ -38,7 +39,7 @@
 <main>
 <article>
 
-<button class="btnCreate">Create article</button>
+<button class="btnCreate" onclick="createarticle()">Create article</button>
 <button class="btnUpdate">Update article</button>
 <button class="btnDelete">Delete Article</button>
 </article>

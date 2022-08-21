@@ -38,6 +38,7 @@
 
                                             </nav>
                                             <div class="col-md-6">
+                                               
                                                 <form action="generate_article.php" method="post" class="articleform">
                                                     <h2>Article-edit
                                                     </h2>
@@ -60,7 +61,7 @@
                         <div class="col-md-6">
                         <label for="content_input">Content:</label></br>
                         <textarea rows="5" cols="40" name="content" form="articleform"></textarea>
-                        <button type="submit" form="article_form" onclick="submitData()" value="Submit">Submit</button>
+                        <button type="submit" form="article_form"  value="Submit">Create</button>
                         </div>
                         </form>
                         </br>

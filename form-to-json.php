@@ -1,6 +1,6 @@
 <?php
 if(isset($_REQUEST['submit'])){
-    $date = '';
+    $data = '';
     $filename = "article.json";
 
     if(is_file($filename)){
@@ -10,7 +10,11 @@ if(isset($_REQUEST['submit'])){
 
 $json_array = json_decode($data,true);
 $json_array[] = array(
-    'code' => $_REQUEST['code'],
+    'title' => $_REQUEST['title'],
+    'lead' => $_REQUEST['lead'],
+    'image' => $_REQUEST['image'],
+    'keywords' => $_REQUEST['keywords'],
+    'content' => $_REQUEST['content'],
 );
 file_put_contents($filename,json_encode($json_array));
 }
