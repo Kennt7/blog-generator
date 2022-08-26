@@ -14,6 +14,8 @@
 
                             </head>
                             <body>
+                           
+                              
                                 <class="col-md-12">
                                     <div class="row">
                                         <h1>Blog-generator</h1>
@@ -39,7 +41,7 @@
                                             </nav>
                                             <div class="col-md-6">
                                                
-                                                <form action="generate_article.php" method="post" class="articleform">
+                                                <form action="form-to-json.php" method="post" class="articleform">
                                                     <h2>Article-edit
                                                     </h2>
                                                     <label for="title_input">Title:</label>
@@ -49,7 +51,7 @@
                                             <input type="text" name="lead_input"></br>
                                     </br>
                                     <label for="image_input">Image:</label>
-                                    <input type="file" name="image_input"></br>
+                                    <input id="imagefile" type="file" name="image_input" multiple  accept="images/*,.webp/" alt="imag"></br>
                             </br>
                        
 
@@ -61,7 +63,7 @@
                         <div class="col-md-6">
                         <label for="content_input">Content:</label></br>
                         <textarea rows="5" cols="40" name="content" form="articleform"></textarea>
-                        <button type="submit" form="article_form"  value="Submit">Create</button>
+                        <button type="submit" form="article_form" o value="Submit"> Create</button>
                         </div>
                         </form>
                         </br>

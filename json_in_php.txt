@@ -1,0 +1,25 @@
+<?php
+    require("blog.class.php");
+    //Insert data
+
+
+    //A blog részletek egy tömbben vannak tárolva
+
+    $new_blog = [
+        "title" => " ",
+        "password" => " ",
+        "status" => " "
+    ];
+
+//Írunk egy blog osztályt, amelyik kezelni fogja az összes feladatot a crud applikációnkban
+//1, létrehozzuk a blog objektumot
+
+
+$blog = new Blog ('blogs.json");
+$blog ->insertNewBlog($new_blog);
+
+//látni fogunk egy property-t, ami nem látható a php fájlunkban, ez az id property, mindig generálunk
+egy id-t, ami auto-increment, mint egy id oszlop a mysql-ben
+
+
+?>

@@ -1,7 +1,8 @@
 <?php
+function convertform(){
 if(isset($_REQUEST['submit'])){
     $data = '';
-    $filename = "article.json";
+    $filename = "blogs.json";
 
     if(is_file($filename)){
         $data = file_get_contents($filename);
@@ -17,5 +18,6 @@ $json_array[] = array(
     'content' => $_REQUEST['content'],
 );
 file_put_contents($filename,json_encode($json_array));
+}
 }
 ?>
