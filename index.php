@@ -4,12 +4,11 @@
         <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link
-                        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-                        rel="stylesheet">
-                        <link rel="stylesheet" href="./css/style.css">
-                            <script
-                                src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+                    <link rel="stylesheet" href="./css/style.css">
+                        
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+                          
                             <title>Blog-generator</title>
                         </head>
                         <body>
@@ -38,17 +37,16 @@
                                 </nav>
 
                                 <main>
-                                    <div class="container mt-3">
-                                        <button class="btn btn-info">Read blogs</button>
+                                    <div class="container">
+                                        <div class="row" style="width:25%">
+                                            <button id="btn" type="button" class=" mt-3 mx-auto btn btn-secondary ">Read blogs</button>
+                                        </div>
+                                        <div class="row" id="carDiv"></div>
 
-                                        <article>
-                                            <div class="card"></div>
-                                            <br>
-
-                                                <div class="card"></div>
-                                            </div>
-                                        </article>
                                     </div>
+                                    <!--contaner mt-3 end--->
                                 </main>
+                                <!-- <script src="./js\get_data_from_restapi.js"></script> -->
+                                <script src="./js\get_data_from_api.js"></script>
                             </body>
                         </html>

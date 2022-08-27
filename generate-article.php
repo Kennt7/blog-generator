@@ -21,7 +21,7 @@ $new_blog =[
 ];
 
 $new_blog = new Blog('blogs.json');
-$new_blog ->insertNewBlog($new_blog);
+// $new_blog ->insertNewBlog();
 /*az első argumentum az egyedi azonosító, ami beazonosítja a célt, a 2. argumentum a property, amit módosítani akarok
 a 3. argumentum amivel beállítom a property-t.
 */
@@ -31,9 +31,9 @@ $blog->deleteAllBlogs(); */
 //néha amikor törlök egy objektumot a php különböző struktúrát ad vissza a json fájlban.
 
  //encode array to json
-$json = json_encode($blog);
+$json = json_encode($new_blog);
 //display
-echo "$json";
+// echo "$json";
 //generate json file
 file_put_contents("blogs.json",$json); 
 ?>

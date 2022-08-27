@@ -1,0 +1,8 @@
+Title:szöveg =h akármi
+Lead:szöveg = header
+Image:Fájl ,png,jpg,jpeg,webp
+Content: Lehessen beilleszteni szöveget, ami tartalmazza a html-tag-eket. =card-body
+Tartalomba lehetnek képek. Ezek kezelésére kell megoldás, hogy a felhasználó tudjon
+képet beszúrni, viszont a kép le kell legyen kezelve a képek tárolási szabályok szerint
+
+kulcsszavak:keywords. =footer

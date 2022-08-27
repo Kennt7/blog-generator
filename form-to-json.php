@@ -1,5 +1,5 @@
 <?php
-function convertform(){
+
 if(isset($_REQUEST['submit'])){
     $data = '';
     $filename = "blogs.json";
@@ -11,13 +11,13 @@ if(isset($_REQUEST['submit'])){
 
 $json_array = json_decode($data,true);
 $json_array[] = array(
-    'title' => $_REQUEST['title'],
-    'lead' => $_REQUEST['lead'],
-    'image' => $_REQUEST['image'],
-    'keywords' => $_REQUEST['keywords'],
-    'content' => $_REQUEST['content'],
+    'title' => $_REQUEST['title_input'],
+    'lead' => $_REQUEST['lead_input'],
+    'image' => $_REQUEST['image_input'],
+    'content' => $_REQUEST['content_input'],
+    'keywords' => $_REQUEST['keywords_input'],
 );
 file_put_contents($filename,json_encode($json_array));
 }
-}
+header("Location:http://localhost/blog-generator/article-edit.php");
 ?>

@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(128, 138, 134);
+  background-color: rgb(99, 110, 106);
   color: black;
   font-size: 17px;
 }
@@ -23,7 +23,7 @@ nav a {
     max-width: 540px;
   }
 }
-.articleform {
+.article_form {
   border: 3px solid black;
   max-width: 60%;
   height: auto;
