@@ -1,0 +1,4 @@
+
+1. Form elküldése post-al
+2. Form konvertálása json tömbbe
+3. Az article.php-ban megjelennek olvasási módban a cikkek
