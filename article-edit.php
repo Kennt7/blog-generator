@@ -1,3 +1,4 @@
+<?php require("form_to_json.php");?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -20,7 +21,7 @@
                 <h1>Blog-generator</h1>
                 <nav class="navbar navbar-expand-sm bg-light">
 
-                    <div class="container-fluid">
+                    <div class="container">
                         <!-- Links -->
                         <ul class="navbar-nav">
                             <li class="nav-item">
@@ -38,30 +39,28 @@
                         </ul>
 
                     </nav>
-                    <div class="col-md-6">
-                        <!---Form--->
-                        <form action="form-to-json.php" method="post" class="article_form">
-                            <h2>Article-edit</h2>
-                            Title:<input type="text" name="title_input"></br>
-                    </br>
-                    Lead:<input type="text" name="lead_input"></br>
-            </br>
-            Image:<input id="imagefile" type="file" name="image_input" multiple="multiple" accept="images/*,.webp/" alt="imag"></br>
-    </br>
-    Keywords:<input type="text" name="keywords_input"></br>
 
-<div class="col-md-6">
-    Content:
+                    <!---Form--->
+                    <form action="form_to_json.php" method="post" class="article_form">
+                        <h2>Article-edit</h2>
+                        Title:</br><input type="text" name="title_input"></br>
+            </br>
+            Lead:</br><input type="text" name="lead_input"></br>
 </br>
+Image:</br><input
+    id="imagefile"
+    type="file"
+    name="image_input"
+    multiple="multiple"
+    accept="images/*,.webp/"
+    alt="imag"></br>
+</br>
+Keywords:</br><input type="text" name="keywords_input"></br>
+Content:</br>
 <textarea rows="5" cols="40" name="content_input"></textarea>
+</br>
 <button type="submit" value="submit">
-    Create</button>
-</div>
-</form>
-</br>
-</br>
-</div>
-</div>
-<!--col-md-12 end-->
-</body>
-</html>
+Create</button>
+<p class="error"><?php echo @error ?></p>
+<p class="success"><?php echo @success ?></p>
+</form></br> </br></div></div><!--col-md-12 end--></body></html>
