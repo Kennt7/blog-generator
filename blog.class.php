@@ -20,7 +20,7 @@ class Blog{
 }
 
 $blog = new Blog();
- $blog->insertNewBlog('titlsdfe','lead','image','content','keywords');
+ $blog->insertNewBlog();
 // echo $new_blog[""];
 
  //encode array to json
@@ -28,6 +28,6 @@ $blog = new Blog();
  //display
  echo "$json";
  //generate json file
- file_put_contents("blogs.json",$json);
+ file_put_contents("article.php",$json);
 
 ?>

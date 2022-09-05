@@ -19,5 +19,8 @@ $json_array[] = array(
 );
 file_put_contents($filename,json_encode($json_array));
 }
-header("Location:http://localhost/blog-generator/article-edit.php");
+
+header(" Location:http://localhost/blog-generator/blogs.json");
+
+
 ?>
