@@ -1,3 +1,4 @@
+<?php require("form_convert_json.php") ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -40,21 +41,21 @@
                     </nav>
                     <div class="col-md-6">
                         <!---Form--->
-                        <form action="form-to-json.php" method="post" class="article_form">
+                        <form action="form_convert_json.php" method="post" class="article_form">
                             <h2>Article-edit</h2>
                             Title:<input type="text" name="title_input"></br>
                     </br>
                     Lead:<input type="text" name="lead_input"></br>
             </br>
-            Image:<input id="imagefile" type="file" name="image_input" multiple="multiple" accept="images/*,.webp/" alt="imag"></br>
+            Image:<input id="imagefile" type="file" name="image_url" multiple="multiple" accept="images/*,.webp/" alt="imagE"></br>
     </br>
     Keywords:<input type="text" name="keywords_input"></br>
 
 <div class="col-md-6">
     Content:
 </br>
-<textarea rows="5" cols="40" name="content_input"></textarea>
-<button type="submit" value="submit">
+<textarea rows="5" cols="40" name="content_input"></textarea></br>
+<button class="btn " type="submit" value="submit">
     Create</button>
 </div>
 </form>
