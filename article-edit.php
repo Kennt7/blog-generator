@@ -1,4 +1,4 @@
-<?php require("form_to_json.php");?>
+<?php require 'form_to_json.php';?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -59,8 +59,8 @@ Keywords:</br><input type="text" name="keywords_input"></br>
 Content:</br>
 <textarea rows="5" cols="40" name="content_input"></textarea>
 </br>
-<button type="submit" value="submit">
+<button type="submit" name="submit">
 Create</button>
-<p class="error"><?php echo @error ?></p>
-<p class="success"><?php echo @success ?></p>
+<p class="error"><?php echo @$error ?></p>
+<p class="success"><?php echo @$success ?></p>
 </form></br> </br></div></div><!--col-md-12 end--></body></html>

@@ -9,12 +9,12 @@ $new_blog[] = array(
     'lead' => $_POST['lead_input'],
     'image' => $_POST['image_input'],
     'content' => $_POST['content_input'],
-    'keywords' => $_POST['keywords_input'],
+    'keywords' => $_POST['keywords_input']
 );
 
 /*Mielőtt eltároljuk az új blog tömböt, ellenőrizni kell, h megvan e az első
 rekordunk. Ezt a filesize ellenőrzésével tehetjük meg.*/
-if(filesize("blogs.json")==0){
+if(filesize("blogs.json") ==0){
     //ha ez az első rekord, akkor létrehozunk belül egy tömböt
     $first_blog = array($new_blog);
 
@@ -44,5 +44,6 @@ $success="Your blog is stored correctly!";
 }
 
 }
-
+header("Location:blogs.json");
+die()
 ?>
