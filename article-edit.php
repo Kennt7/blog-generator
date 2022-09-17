@@ -1,4 +1,4 @@
-<?php require 'form_to_json.php';?>
+/*php require 'form_to_json.php'*/
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -15,11 +15,11 @@
 
     </head>
     <body>
-
+   
         <class="col-md-12">
             <div class="row">
                 <h1>Blog-generator</h1>
-                <nav class="navbar navbar-expand-sm bg-light">
+                <nav class="navbar navbar-expand-sm bg-dark">
 
                     <div class="container">
                         <!-- Links -->
