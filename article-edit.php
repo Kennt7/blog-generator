@@ -1,4 +1,8 @@
+
 <?php require("form_convert_json.php") ?>
+
+/*php require 'form_to_json.php'*/
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -15,13 +19,13 @@
 
     </head>
     <body>
-
+   
         <class="col-md-12">
             <div class="row">
                 <h1>Blog-generator</h1>
-                <nav class="navbar navbar-expand-sm bg-light">
+                <nav class="navbar navbar-expand-sm bg-dark">
 
-                    <div class="container-fluid">
+                    <div class="container">
                         <!-- Links -->
                         <ul class="navbar-nav">
                             <li class="nav-item">
@@ -39,6 +43,7 @@
                         </ul>
 
                     </nav>
+
                     <div class="col-md-6">
                         <!---Form--->
                         <form action="form_convert_json.php" method="post" class="article_form">
@@ -50,19 +55,22 @@
             Image:<input id="imagefile" type="file" name="image_url" multiple="multiple" accept="images/*,.webp/" alt="imagE"></br>
     </br>
     Keywords:<input type="text" name="keywords_input"></br>
+ <!---Form--->
 
-<div class="col-md-6">
-    Content:
+Image:</br><input
+    id="imagefile"
+    type="file"
+    name="image_input"
+    multiple="multiple"
+    accept="images/*,.webp/"
+    alt="imag"></br>
+
+Keywords:</br><input type="text" name="keywords_input"></br>
+Content:</br>
+<textarea rows="5" cols="40" name="content_input"></textarea>
 </br>
-<textarea rows="5" cols="40" name="content_input"></textarea></br>
-<button class="btn " type="submit" value="submit">
-    Create</button>
-</div>
-</form>
-</br>
-</br>
-</div>
-</div>
-<!--col-md-12 end-->
-</body>
-</html>
+<button type="submit" name="submit">
+Create</button>
+<p class="error"><?php echo @$error ?></p>
+<p class="success"><?php echo @$success ?></p>
+</form></br> </br></div></div><!--col-md-12 end--></body></html>

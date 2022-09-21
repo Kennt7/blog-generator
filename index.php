@@ -16,7 +16,7 @@
                                 <h1>Blog-generator</h1>
                                 <nav class="navbar navbar-expand-sm bg-light">
 
-                                    <div class="container-fluid">
+                                    <div class="container-fluid bg-dark">
                                         <!-- Links -->
                                         <ul class="navbar-nav">
                                             <li class="nav-item">
