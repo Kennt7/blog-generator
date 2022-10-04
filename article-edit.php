@@ -65,7 +65,6 @@ Image:</br><input
     accept="images/*,.webp/"
     alt="imag"></br>
 
-Keywords:</br><input type="text" name="keywords_input"></br>
 Content:</br>
 <textarea rows="5" cols="40" name="content_input"></textarea>
 </br>
