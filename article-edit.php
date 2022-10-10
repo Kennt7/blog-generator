@@ -57,6 +57,17 @@
     Keywords:<input type="text" name="keywords_input"></br>
  <!---Form--->
 
+<<<<<<< HEAD
+=======
+Image:</br><input
+    id="imagefile"
+    type="file"
+    name="image_input"
+    multiple="multiple"
+    accept="images/*,.webp/"
+    alt="imag"></br>
+
+
 Content:</br>
 <textarea rows="5" cols="40" name="content_input"></textarea>
 </br>
