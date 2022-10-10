@@ -1,5 +1,5 @@
 
-<?php require("form_convert_json.php") ?>
+
 
 /*php require 'form_to_json.php'*/
 
@@ -52,20 +52,11 @@
                     </br>
                     Lead:<input type="text" name="lead_input"></br>
             </br>
-            Image:<input id="imagefile" type="file" name="image_url" multiple="multiple" accept="images/*,.webp/" alt="imagE"></br>
+            Image:<input id="imagefile" type="url" name="image_url" multiple="multiple" accept="image/*,.webp/" alt="imagE"></br>
     </br>
     Keywords:<input type="text" name="keywords_input"></br>
  <!---Form--->
 
-Image:</br><input
-    id="imagefile"
-    type="file"
-    name="image_input"
-    multiple="multiple"
-    accept="images/*,.webp/"
-    alt="imag"></br>
-
-Keywords:</br><input type="text" name="keywords_input"></br>
 Content:</br>
 <textarea rows="5" cols="40" name="content_input"></textarea>
 </br>

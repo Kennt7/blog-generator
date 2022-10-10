@@ -7,7 +7,7 @@ az értékeinket fogjuk tárolni. */
 $new_blog[] = array(
     'title' => $_POST['title_input'],
     'lead' => $_POST['lead_input'],
-    'image' => $_POST['image_input'],
+    'image' => $_POST['image_url'],
     'content' => $_POST['content_input'],
     'keywords' => $_POST['keywords_input']
 );

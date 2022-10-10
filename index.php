@@ -47,6 +47,6 @@
                                     <!--contaner mt-3 end--->
                                 </main>
                                 <!-- <script src="./js\get_data_from_restapi.js"></script> -->
-                                <script src="./js\get_data_from_api.js"></script>
+                                <script src="js\get_data_from_api.js"></script>
                             </body>
                         </html>

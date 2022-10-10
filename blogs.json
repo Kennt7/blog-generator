@@ -1,65 +1,30 @@
 [
-    [
-        {
-            "title": "rea",
-            "lead": "aerzh",
-            "image": "",
-            "content": "dfgy",
-            "keywords": "yyyygdf"
-        }
-    ],
-    [
-        {
-            "title": "Konyvek",
-            "lead": "regenyek",
-            "image": "",
-            "content": "sdagfsga",
-            "keywords": "valami, valami"
-        }
-    ],
-    [
-        {
-            "title": "Autok",
-            "lead": "Versenyautok",
-            "image": "",
-            "content": "lorem ipsum",
-            "keywords": "porsche, audi"
-        }
-    ],
-    [
-        {
-            "title": "K\u00f6nyvek",
-            "lead": "",
-            "image": "",
-            "content": "",
-            "keywords": ""
-        }
-    ],
-    [
-        {
-            "title": "Konyvek",
-            "lead": "Regenyek",
-            "image": "",
-            "content": "fasdsdfa",
-            "keywords": "egy, ket"
-        }
-    ],
-    [
-        {
-            "title": "dsfa",
-            "lead": "sdfa",
-            "image": "",
-            "content": "sdfga",
-            "keywords": "sdfa"
-        }
-    ],
-    [
-        {
-            "title": "hd",
-            "lead": "hdr",
-            "image": "",
-            "content": "rzh",
-            "keywords": "rze"
-        }
-    ]
+    {
+        "title_input": "Aut\u00f3k",
+        "lead_input": "Sportaut\u00f3k",
+        "image_url": "http:\/\/localhost\/blog-generator\/image\/sportauto.jpg",
+        "content_input": "blabalbalbla",
+        "keywords_input": "Ferrari, Porsche"
+    },
+    {
+        "title_input": "Aut\u00f3k",
+        "lead_input": "Sportaut\u00f3k",
+        "image_url": "http:\/\/localhost\/blog-generator\/image\/sportauto.jpg",
+        "content_input": "blabalbalbla",
+        "keywords_input": "Ferrari, Porsche"
+    },
+    {
+        "title_input": "Irodalom",
+        "lead_input": "Reg\u00e9nyek",
+        "image_url": "C:\\xampp\\htdocs\\blog-generator\\image\\sportauto.jpg",
+        "content_input": "dasvj\u00e9fva",
+        "keywords_input": "novell\u00e1k, essz\u00e9k"
+    },
+    {
+        "title_input": "Javascript",
+        "lead_input": "Js, vs, PHP",
+        "image_url": "http:\/\/localhost\/blog-generator\/image\/sportauto.jpg",
+        "content_input": "sdfgafgdsa",
+        "keywords_input": "arrow function"
+    }
 ]
