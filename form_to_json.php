@@ -1,5 +1,6 @@
 <?php
 
+
 //Először ellennőrizzük, h el lett-e küldve a form a post metódussal
 if(isset($_POST['submit'])){
 /*Ha elküldtük a form-ot, létrehozunk egy asszociatív tömböt, ahol
@@ -7,7 +8,7 @@ az értékeinket fogjuk tárolni. */
 $new_blog[] = array(
     'title' => $_POST['title_input'],
     'lead' => $_POST['lead_input'],
-    'image' => $_POST['image_url'],
+    'image' => $_POST['image_upload'],
     'content' => $_POST['content_input'],
     'keywords' => $_POST['keywords_input']
 );

@@ -46,28 +46,15 @@
 
                     <div class="col-md-6">
                         <!---Form--->
-                        <form action="form_convert_json.php" method="post" class="article_form">
+                        <form action="form_convert_json.php" method="post" class="article_form" enctype="multipart/form-data">
                             <h2>Article-edit</h2>
                             Title:<input type="text" name="title_input"></br>
                     </br>
                     Lead:<input type="text" name="lead_input"></br>
             </br>
-            Image:<input id="imagefile" type="url" name="image_url" multiple="multiple" accept="image/*,.webp/" alt="imagE"></br>
-    </br>
+            Image: <input type="file" name="image_upload" id="image_upload" multiple="multiple"  alt="image"> </br>
     Keywords:<input type="text" name="keywords_input"></br>
  <!---Form--->
-
-<<<<<<< HEAD
-=======
-Image:</br><input
-    id="imagefile"
-    type="file"
-    name="image_input"
-    multiple="multiple"
-    accept="images/*,.webp/"
-    alt="imag"></br>
-
-
 Content:</br>
 <textarea rows="5" cols="40" name="content_input"></textarea>
 </br>
