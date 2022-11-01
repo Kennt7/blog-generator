@@ -1,0 +1,72 @@
+Kép elérése url-ből php-val
+
+2 megközelítés van:
+
+-Alapvető fájlkezelés
+-Egy HTTP könyvtár a cURL használata
+
+I.
+1, fájl létrehozása
+2, Megnyitás írási módban
+3, Tartalom lekérése a forrás URL-ről és beillesztés a fájlba
+
+II.
+Két változó deklarálása: $url,$img. Forrás url-t és célfájlt jelentik.
+Használd a file_put_contents() függvényt, egy karakterláncba való olvasáshoz.
+
+
+<?php
+$url="www.sdfa...hu";
+$img='logo.png';
+
+//egy image fájlba írása
+file_put_contents($img,file_get_contents($url));
+echo "File downloaded";
+?>
+
+Ez megköveteli az allow_url_fopen konfigurációt, amely alapértelmezés szerint 1.
+Néha a projektkövetelmények nem teszik lehetővé ezt a lehetőséget. Ennek oka lehet néhány biztonsági intézkedés, 
+vagy tervezési elv. Ilyenkor jön képbe a másik módszer.
+
+A cURL lehetővé teszi a HTTP kérések végrehajtását PHP-ben. Inicializáljuk a példányunkat és beállítom a kéréshez szükséges
+néhány beállítást, beleértve magát az URL-t is. Ezután végrehajtom a lekérdezést, amely visszaadja a fájl tartalmát.
+Amint megkaptuk az adatokat helyezzük el egy fájlba és mentsük el.
+
+Definiálunk egy file_get_contents_curl függvényt, amely replikálja  a file_get_contents viselkedését a korábban említett
+technikából. Ezen a fv-en belül inicializáltuk a cURL egy példányát a curl_int függvény segítségével, hogy az adatok lekérésére
+használhassuk. Ezt követően néhány beállítást be kell állítani a curl_setopt segítségével, hogy ez a példa működjön.Ennek a 
+függvénynek 3 argumentuma van.(A cURL egy példánya. A megfelelő beállítás, amit be kell állítani. És az érték, amelyre az opció be
+ van állítva).
+
+CURLOPT_HEADER, amely biztosítja, hogy meg kell-e kapnia a fejléceket vagy sem, CURLOPT_RETURNTRANSFER, amely a curl_exec függvény
+visszatérési értékeként továbbítja az adatokat, nem pedig közvetlenül adja ki azokat. Van egy másik lehetőség a CURLOPT_URL, amely
+beállítja a kérés URL-címét. Ezt követően lekérjük az adatokat a curl_exec-ből és visszaadjuk a szülő függvényből.
+Ezek az adatok utána a file_put_contents paranccsal átíródnak gépen lévő fájlba.
+
+
+<?php
+
+function file_get_contents_curl($url){
+    $ch = curl_init();
+
+    curl_setopt($ch,CURLOPT_HEADER,0);
+    curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+    curl_setopt($ch,CURLOPT_URL,$url);
+
+    $data = curl_exec($ch);
+    curl_close($ch);
+
+    return $data;
+}
+
+$data = file_get_contents_curl('https://www.mediageeks.org/gsa.jpg')
+
+$fp = 'logo-1.png';
+
+file_put_contents($fp,$data);
+echo "File downloaded";
+
+
+A 
+
+?>
