@@ -1,5 +1,3 @@
-555
-
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var sass = require('gulp-sass')(require('sass'));
@@ -30,10 +28,10 @@ gulp.task('pack-css', function() {
         .pipe(gulp.dest('../dist'));
 });
 
-/* function defaultTask(cb) {
+function defaultTask(cb) {
     cb();
 }
-exports.default = defaultTask; */
+exports.default = defaultTask;
 
 gulp.task('default', gulp.series(['sass', 'pack-css']));
 gulp.watch('../scss', gulp.series(['sass', 'pack-css']));

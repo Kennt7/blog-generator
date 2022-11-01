@@ -14,6 +14,7 @@ if(isset($_POST["submit"])) {
     $uploadOk = 0;
   }
 }
+//Check file exists
 if (file_exists($target_file)) {
     echo "Sorry, file already exists.";
     $uploadOk = 0;
@@ -52,7 +53,8 @@ if(isset($_POST['submit'])){
         "keywords_input" => $_POST['keywords_input']
         
     );
-    if(filesize("blogs.json")==0){
+  }
+    if(filesize("./blogs.json")==0){
         $first_blog=array($new_blog);
 
         $json_store=$first_blog;
@@ -63,12 +65,18 @@ if(isset($_POST['submit'])){
 
         $json_store = $old_blogs;
     }
-if(!file_put_contents("blogs.json",json_encode($json_store,JSON_PRETTY_PRINT), LOCK_EX)){
+if(!file_put_contents("./blogs.json",json_encode($json_store,JSON_PRETTY_PRINT), LOCK_EX)){
     //ha vmi nem jól működik kiíratjuk
     $error = "Error storing, please try again!";
+    print($error);
 }else{
     $success = "Blog stored!";
+    print($success);
 }
  
+if (isset($_POST['submit'])){
+  $img_name= $_FILES['image_upload']['name'];
+  $tmp_img_name=$_FILES['image_upload']['tmp_name'];
+  move_uploaded_file($tmp_img_name,"/image".$img_name);
 }
 ?>

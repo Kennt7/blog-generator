@@ -45,6 +45,8 @@ $success="Your blog is stored correctly!";
 }
 
 }
+
+
 header("Location:blogs.json ");
 die()
 ?>

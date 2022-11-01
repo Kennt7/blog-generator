@@ -1,128 +1,30 @@
 [
     {
-        "title_input": "Aut\u00f3k",
-        "lead_input": "Sportaut\u00f3k",
-        "image_url": "http:\/\/localhost\/blog-generator\/image\/sportauto.jpg",
-        "content_input": "blabalbalbla",
-        "keywords_input": "Ferrari, Porsche"
-    },
-    {
-        "title_input": "Aut\u00f3k",
-        "lead_input": "Sportaut\u00f3k",
-        "image_url": "http:\/\/localhost\/blog-generator\/image\/sportauto.jpg",
-        "content_input": "blabalbalbla",
-        "keywords_input": "Ferrari, Porsche"
-    },
-    {
-        "title_input": "Irodalom",
-        "lead_input": "Reg\u00e9nyek",
-        "image_url": "C:\\xampp\\htdocs\\blog-generator\\image\\sportauto.jpg",
-        "content_input": "dasvj\u00e9fva",
-        "keywords_input": "novell\u00e1k, essz\u00e9k"
-    },
-    {
-        "title_input": "Javascript",
-        "lead_input": "Js, vs, PHP",
-        "image_url": "http:\/\/localhost\/blog-generator\/image\/sportauto.jpg",
-        "content_input": "sdfgafgdsa",
-        "keywords_input": "arrow function"
-    },
-    {
-        "title_input": "Sz\u00ednh\u00e1z",
-        "lead_input": "operett",
-        "image_url": null,
-        "content_input": "gasffag",
-        "keywords_input": "t\u00e1nc, zene"
-    },
-    {
-        "title_input": "Sz\u00ednh\u00e1z",
-        "lead_input": "operett",
-        "image_url": null,
-        "content_input": "gasffag",
-        "keywords_input": "t\u00e1nc, zene"
-    },
-    {
-        "title_input": "Sz\u00ednh\u00e1z",
-        "lead_input": "operett",
-        "image_url": null,
-        "content_input": "gasffag",
-        "keywords_input": "t\u00e1nc, zene"
-    },
-    {
-        "title_input": "Sz\u00ednh\u00e1z",
-        "lead_input": "operett",
+        "title_input": "Valami",
+        "lead_input": "Valami",
         "image_upload": null,
-        "content_input": "gasffag",
-        "keywords_input": "t\u00e1nc, zene"
+        "content_input": "SG\u00cdR",
+        "keywords_input": "ewgst"
     },
     {
-        "title_input": "Sz\u00ednh\u00e1z",
-        "lead_input": "operett",
+        "title_input": "Valami",
+        "lead_input": "Valami",
         "image_upload": null,
-        "content_input": "gasffag",
-        "keywords_input": "t\u00e1nc, zene"
+        "content_input": "SG\u00cdR",
+        "keywords_input": "ewgst"
     },
     {
-        "title_input": "Sz\u00ednh\u00e1z",
-        "lead_input": "operett",
+        "title_input": "Valami",
+        "lead_input": "Valami",
         "image_upload": null,
-        "content_input": "gasffag",
-        "keywords_input": "t\u00e1nc, zene"
+        "content_input": "SG\u00cdR",
+        "keywords_input": "ewgst"
     },
     {
-        "title_input": "Sz\u00ednh\u00e1z",
-        "lead_input": "operett",
+        "title_input": "Valami",
+        "lead_input": "Valami",
         "image_upload": null,
-        "content_input": "gasffag",
-        "keywords_input": "t\u00e1nc, zene"
-    },
-    {
-        "title_input": "Sz\u00ednh\u00e1z",
-        "lead_input": "operett",
-        "image_upload": null,
-        "content_input": "gasffag",
-        "keywords_input": "t\u00e1nc, zene"
-    },
-    {
-        "title_input": "Sz\u00ednh\u00e1z",
-        "lead_input": "operett",
-        "image_upload": null,
-        "content_input": "gasffag",
-        "keywords_input": "t\u00e1nc, zene"
-    },
-    {
-        "title_input": "Sz\u00ednh\u00e1z",
-        "lead_input": "operett",
-        "image_upload": null,
-        "content_input": "gasffag",
-        "keywords_input": "t\u00e1nc, zene"
-    },
-    {
-        "title_input": "Sz\u00ednh\u00e1z",
-        "lead_input": "operett",
-        "image_upload": null,
-        "content_input": "gasffag",
-        "keywords_input": "t\u00e1nc, zene"
-    },
-    {
-        "title_input": "Sz\u00ednh\u00e1z",
-        "lead_input": "operett",
-        "image_upload": null,
-        "content_input": "gasffag",
-        "keywords_input": "t\u00e1nc, zene"
-    },
-    {
-        "title_input": "Sz\u00ednh\u00e1z",
-        "lead_input": "operett",
-        "image_upload": null,
-        "content_input": "gasffag",
-        "keywords_input": "t\u00e1nc, zene"
-    },
-    {
-        "title_input": "Sz\u00ednh\u00e1z",
-        "lead_input": "operett",
-        "image_upload": null,
-        "content_input": "gasffag",
-        "keywords_input": "t\u00e1nc, zene"
+        "content_input": "SG\u00cdR",
+        "keywords_input": "ewgst"
     }
 ]
