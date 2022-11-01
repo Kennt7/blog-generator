@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(99, 110, 106);
+  background-color: rgb(168, 168, 168);
   color: black;
   font-size: 17px;
 }
@@ -25,13 +25,9 @@ nav a {
 }
 .article_form {
   border: 3px solid black;
-  max-width: 60%;
+  width: 80%;
   height: auto;
-  margin: 50px auto 0 auto;
-}
-
-input {
-  width: 150px;
+  width: auto;
 }
 
 label {
@@ -41,7 +37,7 @@ label {
 
 textarea {
   max-width: 50% !important;
-  margin: 50px auto 0 auto;
+  margin: auto;
 }
 
 .card {

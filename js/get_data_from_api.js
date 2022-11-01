@@ -16,7 +16,7 @@
                      ` <div class = "card col-3 m-1 mx-auto">
                     <h5 class = "card-header m-1 mx-auto">"${post[con].title_input}" </h5>
                     <h2 class = "card-text">"${post[con].lead_input}" </h2>
-                    <img class = "card-img-top" src ="" "${post[con].image_url}">
+                    <img class = "card-img-top"  "${post[con].image_upload}">
                      <div id="blogcontent" class = "card-body"> 
                      "${post[con].content_input}"
                      <p class = "card-footer">"${post[con].keywords_input}"  </p> 

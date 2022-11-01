@@ -1,4 +1,4 @@
-                                $bgcolor:rgb(99, 110, 106);
+                                $bgcolor:rgb(168, 168, 168);
                                 $textcolor: black;
                                 $fontsize:17px;
                                 body {
@@ -31,13 +31,9 @@
                                 
                                 .article_form {
                                     border: 3px solid black;
-                                    width: 200px;
-                                    height: 150px;
-                                    margin: auto;
-                                }
-                                
-                                input {
-                                    width: 150px;
+                                    width: 80%;
+                                    height: auto;
+                                    width: auto;
                                 }
                                 
                                 label {
