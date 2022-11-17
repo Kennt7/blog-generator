@@ -1,4 +1,4 @@
-                                $bgcolor:rgb(224, 22, 22);
+                                $bgcolor:rgb(207, 22, 224);
                                 $textcolor: black;
                                 $fontsize:17px;
                                 body {
@@ -32,8 +32,8 @@
                                 .article_form {
                                     border: 3px solid black;
                                     width: 80%;
-                                    height: auto;
-                                    width: auto;
+                                    margin: 25px auto 0 auto;
+                                    padding: 15px;
                                 }
                                 
                                 label {
